@@ -76,7 +76,23 @@ li {
 
 #about {
     bottom: 91.5%;
-    left: 18%;
+    left: 17%;
     width: 30%; 
     text-align: center;
+}
+
+.btn {
+    background-color: #F26F63 !important;
+    border: #F26F63 !important;
+}
+
+.buttons {
+    bottom: 2.5%;
+    width: 100%;
+    text-align: center;
+    font-family: avenirNext;
+}
+
+.xtra-btn {
+    margin: 5px;
 }
