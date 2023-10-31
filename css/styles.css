@@ -8,7 +8,9 @@
     font-family: avenirNext;
     src: url(../fonts/avenirNext.otf);
   }
-
+*{
+    cursor: url(../images/rocket.svg), auto !important;
+}
 html {
     height: 100%;
   }
