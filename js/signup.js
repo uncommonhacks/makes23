@@ -20,9 +20,11 @@ var url =
           console.log(fn, ln, yr, te, ws, ss);
           URL = `https://docs.google.com/forms/d/e/1FAIpQLScjpflyFahjeBqTC-g4_2i-LRtufjJeZ06XyFh5_Laewhoa5w/formResponse?&submit=Submit?usp=pp_url&entry.1985883040=${fn}&entry.999432858=${ln}&entry.141446247=${yr}&entry.1297437449=${te}&entry.524434191=${ws}&entry.276209187=${ss}`;
 
-          var wdw = window.open(URL);
-          wdw.close();
-          window.location.href = "thankyou.html";
+          //   var wdw = window.open(URL);
+          document.getElementById("frame").setAttribute("src", URL);
+          setTimeout(() => {
+              window.location.href = "thankyou.html";
+          }, 500);
         }
         form.classList.add("was-validated");
       },
