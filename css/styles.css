@@ -15,7 +15,7 @@ html {
 body {
     max-width: 100%;
     overflow-x: hidden;
-    min-height: 100%; 
+    min-height: 100%;
   }
 
 h1 {
@@ -30,7 +30,7 @@ li {
 
 .scrollableElement {
     position: relative;
-} 
+}
 
 /*Images*/
 #backgroundImage {
@@ -41,43 +41,39 @@ li {
 
 .overImage div {
     position: absolute;
-} 
+}
 
 /* section positioning */
 
 #introduction {
-    bottom: 28%;
-    left: 30%;
-    width: 50%; 
-    text-align: left;
-    color: white;
+    bottom: 28%; left: 30%; width: 50%; text-align: left; color: white;
 }
 
 #howitworks {
     bottom: 47%;
     left: 29%;
-    width: 50%; 
+    width: 50%;
     text-align: center;
 }
 
 #judging {
     bottom: 67.5%;
     left: 20%;
-    width: 30%; 
+    width: 30%;
     text-align: center;
 }
 
 #schedule {
     bottom: 84%;
     left: 60%;
-    width: 30%; 
+    width: 30%;
     text-align: left;
 }
 
 #about {
     bottom: 91.5%;
     left: 17%;
-    width: 30%; 
+    width: 30%;
     text-align: center;
 }
 
@@ -93,6 +89,58 @@ li {
     font-family: avenirNext;
 }
 
+.buttons * {
+    font-size: 2rem;
+}
+
 .xtra-btn {
     margin: 5px;
+}
+
+@media only screen and (max-width: 1186px) {
+    body {
+        font-size: 1.5vw;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
+
+    #introduction {
+        bottom: 27%;
+    }
+
+    #howitworks {
+        bottom: 44%;
+    }
+
+    #judging {
+        bottom: 66%;
+    }
+
+    #schedule {
+        bottom: 85%;
+    }
+
+    #about {
+        bottom: 89.5%;
+    }
+
+    p, ol {
+        margin-bottom: 1vw;
+    }
+
+    ul {
+        padding-left: 0;
+    }
+
+    .buttons * {
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (max-width: 675px) {
+    .buttons * {
+        font-size: 1.5vw;
+    }
 }
