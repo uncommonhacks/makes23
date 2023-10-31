@@ -13,12 +13,13 @@ var url =
           console.log("validated form");
           fn = $("input[name=fname]").val();
           ln = $("input[name=lname]").val();
+          email = $("input[name=email]").val();
           yr = $("input[name=year]:checked").val();
           te = $("input[name=team]:checked").val();
           ws = $("input[name=workshop]:checked").val();
           ss = $("input[name=spaceship]:checked").val();
           console.log(fn, ln, yr, te, ws, ss);
-          URL = `https://docs.google.com/forms/d/e/1FAIpQLScjpflyFahjeBqTC-g4_2i-LRtufjJeZ06XyFh5_Laewhoa5w/formResponse?&submit=Submit?usp=pp_url&entry.1985883040=${fn}&entry.999432858=${ln}&entry.141446247=${yr}&entry.1297437449=${te}&entry.524434191=${ws}&entry.276209187=${ss}`;
+          URL = `https://docs.google.com/forms/d/e/1FAIpQLScjpflyFahjeBqTC-g4_2i-LRtufjJeZ06XyFh5_Laewhoa5w/formResponse?&submit=Submit?usp=pp_url&entry.1985883040=${fn}&entry.999432858=${ln}&entry.589357266=${email}&entry.141446247=${yr}&entry.1297437449=${te}&entry.524434191=${ws}&entry.276209187=${ss}`;
 
           const iframe = document.getElementById("frame")
           //   var wdw = window.open(URL);
