@@ -1,0 +1,97 @@
+html,
+body {
+  height: 100%;
+  color: white;
+}
+body {
+  background-image: url("../images/signup_bg.jpg") !important;
+  background-repeat: no-repeat I !important;
+  background-size: cover !important;
+  background-position: center;
+  color: white;
+}
+
+* {
+  font-family: "Inter-Bold", Helvetica;
+  font-size: 1rem;
+}
+
+.title {
+  position: relative;
+  -webkit-text-stroke: 2px #ffffff;
+  font-weight: 700;
+  color: transparent;
+  font-size: 54px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.ty-title {
+    font-weight: 700;
+    font-size: 40px;
+}
+.ty-subtitle {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  /* Your CSS rules for desktop screens go here */
+  .form-wrapper {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1199.99px) {
+  .form-wrapper {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 1023.99px) {
+  .form-wrapper {
+    width: 90%;
+  }
+}
+.form-wrapper .form-label {
+  color: white;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.form-wrapper .radio-group label {
+  width: 100%;
+  text-align: left;
+}
+.form-wrapper .text-field input {
+  background-color: transparent !important;
+  border: solid 2px #6c757d !important;
+  color: rgba(255, 255, 255, 70) !important;
+}
+.form-floating input:focus{
+    outline: none !important;
+}
+.form-wrapper .text-field label {
+  color: #6c757d !important;
+}
+
+.form-wrapper .form-check {
+  padding-left: 0;
+}
+.form-wrapper .form-check img {
+    height: 50px;
+}
+.form-floating>.form-control-plaintext~label::after, .form-floating>.form-control:focus~label::after, .form-floating>.form-control:not(:placeholder-shown)~label::after, .form-floating>.form-select~label::after {
+    background-color: transparent;
+}
+.required-label:after {
+    content:" *";
+    color: red;
+  }
+.was-validated .form-check-input:invalid~.form-check-label {
+    color: #6c757d !important;
+}
+
+.form-check-input.is-valid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label {
+    color: #6c757d;
+}
+.btn-check:checked+.btn {
+    color: white !important;
+}
