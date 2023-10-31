@@ -39,6 +39,19 @@ var url =
           const parentNode = button.parentNode
           parentNode.replaceChild(newParagraph, button);
 
+        } else {
+          if (!document.getElementById("check-form")) {
+            const button = document.getElementById('submit-button')
+
+            var newParagraph = document.createElement('p');
+            newParagraph.textContent = "Please check the information you provided!";
+            newParagraph.className = "error"
+            newParagraph.id = "check-form"
+
+            // Replace the button with the new <p> element
+            const parentNode = button.parentNode
+            parentNode.appendChild(newParagraph, button);
+          }
         }
         form.classList.add("was-validated");
       },

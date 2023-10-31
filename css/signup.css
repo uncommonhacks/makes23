@@ -99,3 +99,8 @@ a {
 .btn-check:checked+.btn {
     color: white !important;
 }
+
+.error {
+  color: var(--bs-form-invalid-color);
+  margin-top: 0.25rem;
+}
