@@ -28,6 +28,16 @@ var url =
                 window.location.href = "thankyou.html";
             }, 500);
           }
+
+          const button = document.getElementById('submit-button')
+
+          var newParagraph = document.createElement('p');
+          newParagraph.textContent = "Loading...";
+
+          // Replace the button with the new <p> element
+          const parentNode = button.parentNode
+          parentNode.replaceChild(newParagraph, button);
+
         }
         form.classList.add("was-validated");
       },
